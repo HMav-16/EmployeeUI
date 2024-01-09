@@ -1,4 +1,4 @@
-# CleanArch.HR.UI
+# Employee Management System v-1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
 
@@ -25,3 +25,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+![list-employee](https://github.com/HMav-16/EmployeeUI/assets/148790419/b3209a4b-dcf9-40ba-a027-48e155bec763)
