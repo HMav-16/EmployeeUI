@@ -1,0 +1,90 @@
+<br>
+<section>
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-header border-bottom">
+                    <h4>{{title}}</h4>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="formadd" (ngSubmit)="onSubmit()">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group mb-3">
+                                    <label class="mb-2">CODE</label>
+                                    <input type="number" formControlName="locationId" class="form-control"
+                                        [ngClass]="{ 'is-invalid': submitted && f['locationId'].errors }" />
+                                    <div *ngIf="submitted && f['locationId'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['locationId'].errors">Code is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  form-group mb-3">
+                            <div class="col">
+                                <label class="mb-2">STREET ADDRESS</label>
+                                <input type="text" formControlName="streetAddress" class="form-control"
+                                    [ngClass]="{ 'is-invalid': submitted && f['streetAddress'].errors }" />
+                                <div *ngIf="submitted && f['streetAddress'].errors" class="invalid-feedback">
+                                    <div *ngIf="f['streetAddress'].errors">Street Address is required</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row  form-group mb-3">
+                            <div class="col">
+                                <label class="mb-2">POSTAL CODE</label>
+                                <input type="text" formControlName="postalCode" class="form-control"
+                                    [ngClass]="{ 'is-invalid': submitted && f['postalCode'].errors }" />
+                                <div *ngIf="submitted && f['postalCode'].errors" class="invalid-feedback">
+                                    <div *ngIf="f['postalCode'].errors">Postal Code is required</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row  form-group mb-3">
+                            <div class="col">
+                                <div class="form-group mb-2">
+                                    <label class="mb-2">CITY</label>
+                                    <input type="text" formControlName="city" class="form-control"
+                                    [ngClass]="{ 'is-invalid': submitted && f['city'].errors }" />
+                                    <div *ngIf="submitted && f['city'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['city'].errors">City Code is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row  form-group mb-3">
+                            <div class="col">
+                                <div class="form-group mb-2">
+                                    <label class="mb-2">PROVINCE</label>
+                                    <input type="text" formControlName="stateProvince" class="form-control"
+                                    [ngClass]="{ 'is-invalid': submitted && f['stateProvince'].errors }" />
+                                    <div *ngIf="submitted && f['stateProvince'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['stateProvince'].errors">Province Code is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                     
+                        </div>
+
+                        <div class="row form-group mb-3">
+                            <div class="col">
+                                <label class="mb-2">COUNTRY</label>
+                                <input type="text" formControlName="countryId" class="form-control" 
+                                [ngClass]="{ 'is-invalid': submitted && f['countryId'].errors }"/>
+                                <div *ngIf="submitted && f['countryId'].errors" class="invalid-feedback">
+                                    <div *ngIf="f['countryId'].errors">Country Code is required</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button [disabled]="loading" type="submit" class="btn btn-success me-3">{{btnText}}</button>
+                        <button type="button" class="btn btn-outline-danger" (click)="btnCancel()">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

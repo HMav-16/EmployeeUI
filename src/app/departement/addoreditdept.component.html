@@ -1,0 +1,44 @@
+<br>
+<section>
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-header border-bottom">
+                    <h4>{{title}}</h4>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="formadd" (ngSubmit)="onSubmit()">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group mb-3">
+                                    <label class="mb-2">DEPARTEMENT NAME</label>
+                                    <input type="text" formControlName="deptName" class="form-control"
+                                        [ngClass]="{ 'is-invalid': submitted && f['deptName'].errors }" />
+                                    <div *ngIf="submitted && f['deptName'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['deptName'].errors">Departement Name is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  form-group mb-3">
+                            <div class="col">
+                                <label class="mb-2">CODE MANAGER</label>
+                                <input type="number" formControlName="managerId" class="form-control"
+                                    [ngClass]="{ 'is-invalid': submitted && f['managerId'].errors }" />
+                            </div>
+                            <div class="col">
+                                <label class="mb-2">CODE LOCATION</label>
+                                <input type="number" formControlName="locationId" class="form-control"
+                                    [ngClass]="{ 'is-invalid': submitted && f['locationId'].errors }" />
+                               
+                            </div>
+                        </div>
+
+                        <button [disabled]="loading" type="submit" class="btn btn-success me-3">{{btnText}}</button>
+                        <button type="button" class="btn btn-outline-danger" (click)="btnCancel()">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
