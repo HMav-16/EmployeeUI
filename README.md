@@ -29,4 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![list-employee](https://github.com/HMav-16/EmployeeUI/assets/148790419/b3209a4b-dcf9-40ba-a027-48e155bec763)
 ![edit-employee](https://github.com/HMav-16/EmployeeUI/assets/148790419/2c55b628-9f8f-4ed2-8c35-48241db52205)
 ![search-empl](https://github.com/HMav-16/EmployeeUI/assets/148790419/81b8eec2-fff7-4166-99e8-a7f8924d8601)
+
+![list-dept](https://github.com/HMav-16/EmployeeUI/assets/148790419/ed4c7bd2-29b1-46e8-a8f8-20df4d5cc941)
 ![edit-dept](https://github.com/HMav-16/EmployeeUI/assets/148790419/56c06fcd-789d-4cad-b5e4-c5b50fce5395)
